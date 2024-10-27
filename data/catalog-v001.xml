@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/2024-09-26/MergedAllCoreOntology" uri="MergedAllCoreOntology.rdf"/>
+    <uri id="Imports Wizard Entry" name="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/2024-09-26/AllCoreOntology" uri="AllCoreOntology.rdf"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1730039121277" name="http://lesfleursdunormal.fr/static/_downloads/bacteria.owl" uri="bacteria.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1730039121277" name="http://purl.obolibrary.org/obo/bfo/" uri="bfo-core.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1730039121277" name="http://purl.obolibrary.org/obo/ogms.owl" uri="ogms.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1730039121277" name="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/AllCoreOntology" uri="AllCoreOntology.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1730039121277" name="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/MergedAllCoreOntology" uri="MergedAllCoreOntology.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1730039121277" name="http://www.semanticweb.org/TCCC" uri="TCCCApplicationOntology.rdf"/>
+    </group>
+</catalog>

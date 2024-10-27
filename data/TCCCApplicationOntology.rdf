@@ -1,0 +1,188 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/TCCC#"
+     xml:base="http://www.semanticweb.org/TCCC"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:tccc="http://semanticweb.org/tccc"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:CommonCoreOntologies="http://www.ontologyrepository.com/CommonCoreOntologies/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/TCCC#">
+        <owl:versionIRI rdf:resource="http://www.semanticweb.org/TCCC/1.0.0"/>
+        <owl:imports rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/2024-09-26/AllCoreOntology"/>
+        <owl:imports rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/2024-09-26/MergedAllCoreOntology"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/TCCC#has_UMLS_CUI -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/TCCC#has_UMLS_CUI"/>
+    
+
+
+    <!-- http://www.semanticweb.org/TCCC#has_external_IRI -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/TCCC#has_external_IRI"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/TCCC#Alert_Voice_Pain_Unresponsive_Scale -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/TCCC#Alert_Voice_Pain_Unresponsive_Scale">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/TCCC#Assessment_Scale"/>
+        <CommonCoreOntologies:doctrinal_acronym>AVPU</CommonCoreOntologies:doctrinal_acronym>
+        <rdfs:label>Alert Voice Pain Unresponsive Scale</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/TCCC#Assessment_Scale -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/TCCC#Assessment_Scale">
+        <rdfs:subClassOf rdf:resource="http://www.ontologyrepository.com/CommonCoreOntologies/ReferenceSystem"/>
+        <rdfs:label>Medical Assessment Scale</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/TCCC#Care_Under_Fire -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/TCCC#Care_Under_Fire">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/TCCC#TCCC-Phase"/>
+        <rdfs:label>Care Under Fire</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/TCCC#Heart_Rate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/TCCC#Heart_Rate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/TCCC#Vital_Sign"/>
+        <has_UMLS_CUI>C0018810</has_UMLS_CUI>
+        <has_external_IRI>http://snomed.info/id/364075005</has_external_IRI>
+        <rdfs:label>Heart Rate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/TCCC#Oxygen_Saturation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/TCCC#Oxygen_Saturation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/TCCC#Vital_Sign"/>
+        <CommonCoreOntologies:acronym>SpO2</CommonCoreOntologies:acronym>
+        <has_UMLS_CUI>C0428174</has_UMLS_CUI>
+        <has_external_IRI>http://snomed.info/id/103228002</has_external_IRI>
+        <rdfs:label>Oxygen Saturation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/TCCC#Respiratory_Rate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/TCCC#Respiratory_Rate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/TCCC#Vital_Sign"/>
+        <has_UMLS_CUI>C0231832</has_UMLS_CUI>
+        <has_external_IRI>http://snomed.info/id/86290005</has_external_IRI>
+        <rdfs:label>Respiratory Rate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/TCCC#TCCC-Phase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/TCCC#TCCC-Phase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/TCCC#Tactical_Combat_Casualty_Care"/>
+        <rdfs:label>TCCC Phase</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/TCCC#Tactical_Combat_Casualty_Care -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/TCCC#Tactical_Combat_Casualty_Care">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <CommonCoreOntologies:doctrinal_acronym>TCCC</CommonCoreOntologies:doctrinal_acronym>
+        <rdfs:label>Tactical Combat Casualty Care</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/TCCC#Tactical_Evacuation_Care -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/TCCC#Tactical_Evacuation_Care">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/TCCC#TCCC-Phase"/>
+        <CommonCoreOntologies:doctrinal_label>TACEVAC</CommonCoreOntologies:doctrinal_label>
+        <rdfs:label>Tactical Evacuation Care</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/TCCC#Tactical_Field_Care -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/TCCC#Tactical_Field_Care">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/TCCC#TCCC-Phase"/>
+        <rdfs:label>Tactical Field Care</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/TCCC#Vital_Sign -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/TCCC#Vital_Sign">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <has_UMLS_CUI>C0518766</has_UMLS_CUI>
+        <rdfs:label>Vital Sign</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/TCCC#Care_Under_Fire"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/TCCC#Tactical_Evacuation_Care"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/TCCC#Tactical_Field_Care"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
